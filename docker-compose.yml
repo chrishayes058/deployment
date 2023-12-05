@@ -5,6 +5,10 @@ services:
       - ./session.session:/usr/src/app/session.session
     env_file:
       - .env
+  alpaca_trading_app:
+    image: apps/alpaca-trading-app
+    env_file:
+      - .env
 
 networks:
   default:
